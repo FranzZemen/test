@@ -4,3 +4,5 @@ export function getJSON(): string {
 }
 
 export const jsonStr = '{"prop":"jsonStr"}';
+
+export const lib = {myJSONData: "nice data!"}
