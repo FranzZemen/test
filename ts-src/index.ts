@@ -12,3 +12,10 @@ export const nestedJsonStr = {
   jsonStr,
   getJSON
 }
+
+export function getObj(): Object {
+  return {
+    id:999,
+    name: 'test'
+  }
+}
