@@ -1,6 +1,6 @@
 import 'mocha';
 import chai from 'chai';
-import {getJSON} from '../publish';
+import {getJSON} from '../publish/index.js';
 
 const expect = chai.expect;
 const should = chai.should();
@@ -11,3 +11,4 @@ describe('Test Tests', ()=> {
     done();
   });
 });
+export const dummy = 1;

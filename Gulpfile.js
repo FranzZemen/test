@@ -1,15 +1,20 @@
+import {cwd} from 'process';
+import * as gulpBase from '@franzzemen/gulp-base';
+import { createRequire } from "module";
+const requireModule = createRequire(import.meta.url);
+gulpBase.init(requireModule('./package.json'), cwd() + '/tsconfig.src.json', cwd() + '/tsconfig.test.json', 100);
+gulpBase.setMainBranch('main');
 
-const gulpBase = require('@franzzemen/gulp-base').init(require('./package.json'), 100, true);
-require('@franzzemen/gulp-base').setMainBranch('main');
+export const test = gulpBase.test;
 
+export const clean = gulpBase.clean;
+export const buildTest = gulpBase.buildTest;
+export default gulpBase.default;
 
-exports.buildTest = gulpBase.buildTest;
-exports.test = gulpBase.test;
+export const patch = gulpBase.patch;
+export const minor = gulpBase.minor;
+export const major = gulpBase.major;
 
-exports.default = gulpBase.default;
-exports.patch = gulpBase.patch;
-exports.minor = gulpBase.minor;
-exports.major = gulpBase.major;
+export const npmForceUpdateProject = gulpBase.npmForceUpdateProject;
+export const npmUpdateProject = gulpBase.npmUpdateProject;
 
-
-exports.npmForceUpdateProject = gulpBase.npmForceUpdateProject;
