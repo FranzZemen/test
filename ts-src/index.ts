@@ -19,3 +19,10 @@ export function getObj(): Object {
     name: 'test'
   }
 }
+
+export function getObjWithParameters(_label: string, _id: number) {
+  return {
+    label: _label,
+    id: _id
+  }
+}
