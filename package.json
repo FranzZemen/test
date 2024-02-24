@@ -15,13 +15,13 @@
   "author": "Franz Zemen",
   "license": "MIT",
   "devDependencies": {
-    "@types/chai": "^4.3.3",
-    "@types/mocha": "^10.0.0",
-    "chai": "^4.3.6",
+    "@types/chai": "^4.3.12",
+    "@types/mocha": "^10.0.6",
+    "chai": "^5.1.0",
     "gulp": "^4.0.2",
-    "gulp-mocha": "^8.0.0",
-    "mocha": "^10.1.0",
-    "typescript": "^4.8.4"
+    "gulp-mocha": "^10.0.0",
+    "mocha": "^10.3.0",
+    "typescript": "^5.3.3"
   },
   "dependencies": {
     "@franzzemen/build-system": "^0.0.53"
