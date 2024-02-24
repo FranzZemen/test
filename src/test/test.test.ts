@@ -1,6 +1,6 @@
 import 'mocha';
 import chai from 'chai';
-import {getJSON} from '../publish/index.js';
+import {getJSON} from '@franzzemen/test';
 
 const expect = chai.expect;
 const should = chai.should();

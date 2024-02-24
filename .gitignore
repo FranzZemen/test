@@ -1,13 +1,3 @@
 .idea
-.aws-sam
-*~
 node_modules
-*.zip
-release
-build
-publish
-testing
-config.json
-config.decrypt
-new
-old-java
+out
